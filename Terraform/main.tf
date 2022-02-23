@@ -16,7 +16,7 @@ resource "azurerm_storage_account" "StorAccount1" {
   location                 = data.azurerm_resource_group.ResGroup.location
   account_kind             = "StorageV2"
   account_tier             = "Standard"
-  account_replication_type = "LRS"
+  account_replication_type = "GRS"
 }
 
 resource "azurerm_storage_container" "Container1" {
